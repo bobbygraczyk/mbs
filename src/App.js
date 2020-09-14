@@ -7,16 +7,18 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <Router>
       <Nav />
       <Switch>
-        <Route path="/about" component={About}>
+        <Route path="/about">
+          <About />
         </Route>
-        <Route path="/" component={Home}>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
     </Router>
