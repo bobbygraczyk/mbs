@@ -14,11 +14,9 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route path="/about">
-          <About />
+        <Route path="/about" component={About}>
         </Route>
-        <Route path="/">
-          <Home />
+        <Route path="/" component={Home}>
         </Route>
       </Switch>
     </Router>
