@@ -7,18 +7,16 @@ import {
 class Nav extends React.Component {
     render() {
         return (
-            <nav>
-                <ul>
-                    <li>
+            <div class="nav-wrapper">
+                <div class="frame">
+                    <nav>
                         <Link to='/'>Home</Link>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
                         <Link to='/about'>About</Link>
-                    </li>
-                </ul>
-            </nav>
+                    </nav>
+                </div>
+            </div>
+            
+            
         );
     }
 }

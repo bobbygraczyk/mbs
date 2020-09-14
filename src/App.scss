@@ -2,9 +2,11 @@ $teal: #8EC6C5;
 $purple: #8566AA;
 $sitke: 'Sitka';
 
-body {
+body, html {
   font-family: 'Segoe UI', sans-serif;
   width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 .frame {
@@ -19,8 +21,29 @@ body {
   display: inline-block;
 }
 
+.nav-wrapper {
+  padding: 12px 0px;
+  background-color: $teal;
+  color: white;
+}
+
+nav a {
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+  padding: 0px 24px 0px 0px;
+}
+
+nav a:visited {
+  color: white;
+}
+
 
 @media screen and (min-width: 780px) {
+  nav a {
+    font-size: 24px;
+    font-weight: 600;
+  }
   .frame {
     max-width: 1280px;
     padding: 24px;
