@@ -1,25 +1,58 @@
 import React from 'react';
+import Button from '../components/button';
+import CallToAction from '../components/action';
+import BenefitsCard from '../components/benefitsCard';
 
 class Home extends React.Component {
     render() {
         return (
-            <React.Fragment>
-                <div className="home-hero-wrapper">
+            <div className="home">
+                <div className="hero-wrapper">
                     <div className="frame">
                         <h1>Northeast Ohio's only 100% mobile chiropractor</h1>
                     </div>
                 </div>
-                <div className="frame">
+                <div className="frame meet">
                     <h2 className="subtitle">Meet Dr. Stacey</h2>
                     <div className="col-60" id="bio">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                        Born and raised in Northeast Ohio, Dr. Stacey started a mobile chiropractic practice because she saw a need in her community that wasn’t being fulfilled. Due to the high overhead of a typical brick and mortar office, the average chiropractic doctor must treat an extremely high volume of patients every day to make a living. Tired of seeing patients get rushed through an inadequate five minute appointment, she saw an opportunity - starting a mobile chiropractic clinic would allow her to treat a lower volume of customers, so she can spend more time with them while getting a better understanding of their lifestyle and needs.
+                        <Button icon={"info"} label={"Learn More About Dr. Stacey"} />
                     </div>
                     <div className="col-30 drop-shadow" id="bio-photo">
                         {/* bio photo */}
                     </div>
                 </div>
-            </React.Fragment>
-            
+                <div className="frame benefits">
+                    <h2>Benefits of Mobile Care</h2>
+                    <div class="col-30">
+                        <BenefitsCard 
+                            title="Scheduling" 
+                            icon="info"
+                            copy="Many people have a hard time fitting their chiropractic care into their busy lives - most have work schedules that are nearly identical to the working hours of a typical brick and mortar chiropractic office. When the chiropractor comes to you, you don’t have to worry about missing work, falling behind, or rushing to make your appointment."
+                        />
+                    </div>
+                    <div class="col-30">
+                        <BenefitsCard 
+                            title="Ease" 
+                            icon="info"
+                            copy="Getting chiropractic care doesn’t have to be a hassle. You won’t have to deal with the stress of leaving your home and family, or bad traffic on the way to your appointment. When the chiropractor comes to you, you receive quality chiropractic care from the comfort of your own home or workplace."
+                        />
+                    </div>
+                    <div class="col-30">
+                        <BenefitsCard 
+                            title="Save Time" 
+                            icon="info"
+                            copy="Your time is important. It’s frustrating to be stuck waiting in a lobby for a longer amount of time than the actual treatment takes. When the chiropractor comes to you, there’s no waiting! This gives the doctor more time to understand your needs and allows them to give you the personalized and focused care you deserve."
+                        />
+                    </div>
+                    <p>
+                        With mobile treatment, the doctor will be able to get a better idea of your lifestle
+                        and the environment you experience every day. With this kind of insight, the doctor
+                        will be able to provide key information and strategies on how you can achieve your health goals.
+                    </p>
+                </div>
+                <CallToAction />
+            </div>
         );
     }
 }

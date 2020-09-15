@@ -26,6 +26,24 @@ a {
   color: white;
 }
 
+h1 {
+  font-family: $sitka;
+}
+
+button {
+  background-color: $teal;
+  border-radius: 15px;
+  border: 0px;
+  color: white;
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  font-size: 24px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
 .subtitle {
   border-left: 6px solid $purple;
   padding-left: 4px;
@@ -118,9 +136,9 @@ nav a:visited, a:visited {
     margin: 0 auto;
     width: 100%;
     padding: 0px 24px;
-  }
-  nav a {
-    margin-right: 12px;
+    a {
+      margin-right: 12px;
+    }
   }
   .nav-link {
     font-size: 24px;
