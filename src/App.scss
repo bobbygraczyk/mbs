@@ -1,12 +1,21 @@
 $teal: #8EC6C5;
 $purple: #8566AA;
-$sitke: 'Sitka';
+$sitka: 'Sitka';
 
 body, html {
   font-family: 'Segoe UI', sans-serif;
   width: 100vw;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
 }
 
 .frame {
@@ -47,7 +56,7 @@ nav a:visited {
   .frame {
     max-width: 1280px;
     padding: 24px;
-    width: calc(100% - 48px);
+    width: 100%;
   }
   .col-50 {
     width: 50%;
@@ -71,10 +80,10 @@ nav a:visited {
 @media screen and (max-width: 779px) {
   .frame {
     padding: 12px;
-    width: calc(100% - 24px);
+    width: 100%;
   }
   .col-50, .col-30 {
-    width: calc(100% - 24px);
+    width: 100%;
     flex-basis: 100%;
   }
   .nav-open {
@@ -85,14 +94,22 @@ nav a:visited {
     top: 6px;
   }
   .nav-links {
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     padding: 24px;
-    background-color: $purple;
-    position: relative;
+    background-color: $teal;
+    position: absolute;
+    top: 0px;
     z-index: 2;
     left: -100vw;
-    transition: position 0.2s ease-in-out;
+    transition: left 0.2s ease-in-out;
+    -webkit-transition: left 0.2s ease-in-out;
+    -moz-transition: left 0.2s ease-in-out;
+    -ms-transition: left 0.2s ease-in-out;
+    -o-transition: left 0.2s ease-in-out;
+}
+  .mobile span {
+    display: inline-block;
   }
   .nav-links a {
     display: block;

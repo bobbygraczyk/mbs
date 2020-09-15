@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Link,
+    NavLink,
     withRouter
 } from "react-router-dom";
 
@@ -13,11 +13,10 @@ class Nav extends React.Component {
         }
     }
     toggleMobileMenu() {
-        console.log(this.nav);
         if (this.state.navOpen) {
-            this.navOpen.style.left = "-100vw";
+            this.nav.current.style.left = "-100vw";
         } else {
-            this.navOpen.style.left = "0px";
+            this.nav.current.style.left = "0vw";
         }
         this.setState({ navOpen: !this.state.navOpen });
     }
@@ -33,12 +32,10 @@ class Nav extends React.Component {
                             <path d="M12.823 2.823l-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0z"/>
                             </svg>
                         </div>
-                        <div ref={this.nav} className="nav-links">
-                            <Link to='/'>Home</Link>
-                            <Link to='/about'>About</Link>
-                        </div>
-                        <div className="mobile">
-                            <span>Mind, Body, Soul</span>
+                        <div ref={this.nav} className="nav-links" onClick={() => this.toggleMobileMenu()}>
+                            <NavLink to='/home' activeStyle={{ color: '#8566AA' }}>Home</NavLink>
+                            <NavLink to='/about' activeStyle={{ color: '#8566AA' }}>About</NavLink>
+                            <a class="mobile" onClick={() => this.toggleMobileMenu()}>Close</a>
                         </div>
                     </nav>
                 </div>
