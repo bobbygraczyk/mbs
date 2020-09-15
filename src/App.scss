@@ -57,6 +57,9 @@ nav a:visited {
     width: 33%;
     flex-basis: 33%;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 // @media screen and (max-width: 740px) {
@@ -70,12 +73,28 @@ nav a:visited {
     padding: 12px;
     width: calc(100% - 24px);
   }
-  .col-50 {
-    width: 100%;
+  .col-50, .col-30 {
+    width: calc(100% - 24px);
     flex-basis: 100%;
   }
-  .col-30 {
-    width: 100%;
-    flex-basis: 100%;
+  .nav-open {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0px 12px;
+    position: relative;
+    top: 6px;
+  }
+  .nav-links {
+    height: 100vw;
+    width: 100vw;
+    padding: 24px;
+    background-color: $purple;
+    position: relative;
+    z-index: 2;
+    left: -100vw;
+    transition: position 0.2s ease-in-out;
+  }
+  .nav-links a {
+    display: block;
   }
 }
