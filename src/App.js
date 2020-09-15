@@ -1,7 +1,7 @@
 import React from 'react';
-import Home from './views/home.js';
-import Nav from './components/nav.js';
-import About from './views/about.js';
+import Home from './views/home';
+import Nav from './components/nav';
+import About from './views/about';
 import {
   BrowserRouter as Router,
   Switch,
