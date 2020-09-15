@@ -17,11 +17,19 @@ body, html {
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   cursor: pointer;
   color: white;
+}
+
+.subtitle {
+  border-left: 6px solid $purple;
+  padding-left: 4px;
+  font-family: $sitka;
 }
 
 //layout
@@ -30,7 +38,7 @@ a {
   margin: 0 auto;
 }
 
-.col-50, .col-30 {
+.col-50, .col-30, .col-60 {
   clear: both;
   margin: 0;
   padding: 12px 0px;
@@ -63,6 +71,20 @@ nav a:visited, a:visited {
   fill: white;
 }
 
+#bio-photo {
+  border: 4px solid $teal;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  height: 100%;
+}
+
+.drop-shadow {
+  box-shadow: -8px 8px 0px $purple;
+}
+
 //
 // DESKTOP
 //
@@ -75,6 +97,9 @@ nav a:visited, a:visited {
     max-width: 1280px;
     padding: 24px;
     width: 100%;
+  }
+  .col-60 {
+    width: 66%;
   }
   .col-50 {
     width: 50%;
@@ -158,7 +183,7 @@ nav a:visited, a:visited {
     padding: 12px;
     width: 100%;
   }
-  .col-50, .col-30 {
+  .col-60, .col-50, .col-30 {
     width: 100%;
   }
   .svg-cont {
