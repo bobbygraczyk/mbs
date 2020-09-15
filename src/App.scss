@@ -2,6 +2,10 @@ $teal: #8EC6C5;
 $purple: #8566AA;
 $sitka: 'Sitka';
 
+//
+// GLOBALS
+//
+
 body, html {
   font-family: 'Segoe UI', sans-serif;
   width: 100vw;
@@ -18,6 +22,8 @@ a {
   cursor: pointer;
 }
 
+//layout
+
 .frame {
   margin: 0 auto;
 }
@@ -29,8 +35,9 @@ a {
   display: inline-block;
 }
 
+//nav
+
 .nav-wrapper {
-  padding: 12px 0px;
   background-color: $teal;
   color: white;
 }
@@ -39,19 +46,29 @@ nav a {
   display: inline-block;
   width: fit-content;
   text-decoration: none;
-  padding: 0px 24px 0px 0px;
 }
 
 nav a:visited {
   color: white;
 }
 
+.svg-cont {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-fb path {
+  fill: white;
+}
+
+//
+// DESKTOP
+//
 
 @media screen and (min-width: 780px) {
-  nav a {
-    font-size: 24px;
-    font-weight: 600;
-  }
+
+  //layout
+
   .frame {
     max-width: 1280px;
     padding: 24px;
@@ -66,9 +83,55 @@ nav a:visited {
   .mobile {
     display: none;
   }
+
+  //nav
+
+  nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px 24px;
+  }
+  nav a {
+    margin-right: 12px;
+  }
+  .nav-link {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    top: -26px;
+  }
+  .svg-cont {
+    display: inline-block;
+    padding-right: 24px;
+  }
+  .nav-links {
+    position: relative;
+  }
+  .svg-cont img {
+    height: 72px;
+  }
+  .nav-wrapper {
+    height: 74px;
+  }
+  .nav-fb {
+    position: absolute;
+    right: 0px;
+    top: 24px;
+  }
 }
 
+//
+// MOBILE
+//
+
 @media screen and (max-width: 779px) {
+
+  //layout
+
+  .desktop {
+    display: none;
+  }
   .frame {
     padding: 12px;
     width: 100%;
@@ -76,14 +139,27 @@ nav a:visited {
   .col-50, .col-30 {
     width: 100%;
   }
+  .svg-cont {
+    display: inline-block;
+  }
+
+  //nav
+
+  .mobile-nav {
+    height: 50px;
+  }
   .nav-open {
     display: inline-block;
-    font-size: 24px;
+    font-size: 32px;
     padding: 0px 12px;
     position: relative;
-    top: 6px;
+    top: -8px;
+    cursor: pointer;
   }
-  .nav-links {
+  .nav-wrapper {
+    padding: 8px;
+  }
+  .mobile-menu {
     height: 100vh;
     width: 100vw;
     padding: 24px;
@@ -98,7 +174,10 @@ nav a:visited {
     -ms-transition: left 0.2s ease-in-out;
     -o-transition: left 0.2s ease-in-out;
   }
-  .nav-links a {
+  .mobile-menu a {
     display: block;
+  }
+  .svg-cont img {
+    height: 50px;
   }
 }
