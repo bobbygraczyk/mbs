@@ -16,6 +16,7 @@ class Nav extends React.Component {
             <React.Fragment>
                 <NavLink className="nav-link" to='/home' activeStyle={{borderBottom: '4px solid #8566AA'}} onClick={() => this.toggleMobileMenu()}>Home</NavLink>
                 <NavLink className="nav-link" to='/about' activeStyle={{borderBottom: '4px solid #8566AA'}} onClick={() => this.toggleMobileMenu()}>About</NavLink>
+                <NavLink className="nav-link" to='/services' activeStyle={{borderBottom: '4px solid #8566AA'}} onClick={() => this.toggleMobileMenu()}>Services</NavLink>
             </React.Fragment>
         );
         this.state = {

@@ -24,21 +24,21 @@ class Home extends React.Component {
                 </div>
                 <div className="frame benefits">
                     <h2>Benefits of Mobile Care</h2>
-                    <div class="col-30">
+                    <div className="col-30">
                         <BenefitsCard 
                             title="Scheduling" 
                             icon="info"
                             copy="Many people have a hard time fitting their chiropractic care into their busy lives - most have work schedules that are nearly identical to the working hours of a typical brick and mortar chiropractic office. When the chiropractor comes to you, you don’t have to worry about missing work, falling behind, or rushing to make your appointment."
                         />
                     </div>
-                    <div class="col-30">
+                    <div className="col-30">
                         <BenefitsCard 
                             title="Ease" 
                             icon="info"
                             copy="Getting chiropractic care doesn’t have to be a hassle. You won’t have to deal with the stress of leaving your home and family, or bad traffic on the way to your appointment. When the chiropractor comes to you, you receive quality chiropractic care from the comfort of your own home or workplace."
                         />
                     </div>
-                    <div class="col-30">
+                    <div className="col-30">
                         <BenefitsCard 
                             title="Save Time" 
                             icon="info"
