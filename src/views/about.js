@@ -63,6 +63,97 @@ class About extends React.Component {
                         <BenefitsListItem title="Improve quality of life" icon="info" />
                         <BenefitsListItem title="Decrease pain" icon="info" />
                     </div>
+                    <div className="frame faq">
+                        <h2>Frequently Asked Questions</h2>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; All accounts must have a card on file, that is not HSA/FSA, for the cancellation fee to be applied to. If there is no card on file, or if the card on file declines payment, no future appointments will be booked until the debt is settled.
+                            </p>
+                            <p class="answer">
+                                No, insurance does not cover services provided by a chiropractor outside of the office setting.  Also, maintenance and wellness care are non-covered services with most insurance plans. Credit or debit cards, venmo, FSA, and HSA are some of the payment options.
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; How long does an appointment take?                            
+                            </p>
+                            <p class="answer">
+                                A session is based upon the services needed on that particular day. An average session will typically run 10-60 minutes; With initial visits taking the longest amount of time.
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; Where do you travel to?
+                            </p>
+                            <p class="answer">
+                                Counties in Ohio Serviced: Cuyahoga County, Portage County, Summit County, Wayne County, Stark County, Ashland County, Lorain County.
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; What if I’m out of this area?
+                            </p>
+                            <p class="answer">
+                                Accommodations can be made, with compensation fair to time and mileage.
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; Do you adjust by hand or with an instrument?
+                            </p>
+                            <p class="answer">
+                                We use the Activator Method, which uses an instrument.
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; Does it hurt?
+                            </p>
+                            <p class="answer">
+                                An adjustment may be a little uncomfortable, but this feeling only lasts seconds. 
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; How often should I get my spine checked and adjusted?
+                            </p>
+                            <p class="answer">
+                                It varies per individual and the health of their spine. Keep in mind that all processes take time, especially allowing your body to adapt and to heal.
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; I heard that once you go to a chiropractor, you have to keep going.
+                            </p>
+                            <p class="answer">
+                                Continued service is not always necessary, but you will want to continue maintenance care once you realize how much better you are doing. 
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; Do I need a referral from a medical doctor?
+                            </p>
+                            <p class="answer">
+                                No, you do not need a referral.
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; Can children or babies get adjusted?
+                            </p>
+                            <p class="answer">
+                                Absolutely! I love checking and adjusting children and infants! Their spines and nervous systems are just as important as yours! (If you havent stopped by the About page, now is the time).
+                            </p>
+                        </div>
+                        <div className="faq-entry">
+                            <p class="question">
+                                &bull; I feel fine, should I get my spine checked?
+                            </p>
+                            <p class="answer">
+                            I’ll answer that with a few questions: Why do we get routine teeth cleanings? Why do we change our motor oil every 3,000 miles?  Why do olympic athletes and all NFL teams have a chiropractor on staff?
+                            </p>
+                        </div>
+                    </div>
                     <CallToAction />
                 </div>
             </div>

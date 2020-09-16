@@ -1,12 +1,13 @@
 import React from 'react';
+import Icons from '../components/icons';
 
 class Services extends React.Component {
     render() {
         return (
             <div className="services">
                 <div className="hero-container">
-                    <div className="frame">
-                        <h2>Services</h2>
+                    <div className="frame head">
+                        <h1>Services</h1>
                     </div>
                 </div>
                 <div className="frame appts">
@@ -40,7 +41,46 @@ class Services extends React.Component {
                     </div>
                 </div>
                 <div className="frame payment">
-                    
+                    <div className="col-50 pay-type">
+                        <Icons name="info" />
+                        <h2>Payment Options</h2>
+                        <p>
+                            We accept all HSA / FSA cards, credit / debit cards, and Venmo. We do not accept cash or checks.
+                        </p>
+                    </div>
+                    <div className="col-50 pay-type">
+                        <Icons name="info" />
+                        <h2>Insurance Options</h2>
+                        <p>
+                            We can provide you with an itemized bill (super bill) that you can personally submit to your insurance company for reimbursement. However, all insurance plans are different, so reimbursement is not guaranteed.
+                        </p>
+                    </div>
+                    <div className="frame booking">
+                        <h2>Booking Fees</h2>
+                        <p>
+                            A booking fee of $25 must be electronically paid in order to book an appointment. The $25 will be applied towards any service rendered during that patient visit.  Remaining balances must be paid at the time of services rendered. If there is a discrepancy about a payment(s), the Doctor is always willing to discuss it with the patient. If the first visit is canceled less than 24 hours before the appointment, the booking fee will be forfeited. If the original booking fee is forfeited, the booking fee must be paid again prior to rescheduling your new patient appointment.
+                        </p>
+                    </div>
+                    <div className="frame cancellation">
+                        <h2>Cancellation Policy</h2>
+                        <ul>
+                            <li>
+                                We require a 24-hour cancellation notice for our services.
+                            </li>
+                            <li>
+                                The Doctor strategically plans the mobile route to enhance the efficiency of treating patients. Every appointment booked is valuable to the practice.
+                            </li>
+                            <li>
+                                When there are short notice cancellations, it is almost impossible to add a replacement appointment without affecting other appointments.
+                            </li>
+                            <li>
+                                Due to the value that each appointment has, any appointment cancelled less than 24 hours before the appointment will have a cancellation fee of $25 applied to the account. Even if your appointment is the next day, it is still required that you cancel prior to 24 hours of your appointment. (Example: If your appointment is at 3 pm on Tuesday, and you cancel your appointment at 3:01pm on Monday, the cancellation fee will be applied to your account.)
+                            </li>
+                            <li>
+                                All accounts must have a card on file, that is not HSA/FSA, for the cancellation fee to be applied to. If there is no card on file, or if the card on file declines payment, no future appointments will be booked until the debt is settled.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         )
