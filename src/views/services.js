@@ -1,11 +1,12 @@
 import React from 'react';
+import CallToAction from '../components/action';
 import Icons from '../components/icons';
 
 class Services extends React.Component {
     render() {
         return (
             <div className="services">
-                <div className="hero-container">
+                <div className="hero-wrapper">
                     <div className="frame head">
                         <h1>Services</h1>
                     </div>
@@ -82,6 +83,7 @@ class Services extends React.Component {
                         </ul>
                     </div>
                 </div>
+                <CallToAction />
             </div>
         )
     }

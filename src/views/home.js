@@ -8,7 +8,7 @@ class Home extends React.Component {
         return (
             <div className="home">
                 <div className="hero-wrapper">
-                    <div className="frame">
+                    <div className="frame head">
                         <h1>Northeast Ohio's only 100% mobile chiropractor</h1>
                     </div>
                 </div>

@@ -1,6 +1,13 @@
 $teal: #8EC6C5;
 $purple: #8566AA;
 $sitka: 'Sitka';
+@mixin vert-center {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 //
 // GLOBALS
@@ -44,6 +51,21 @@ button {
   -o-border-radius: 15px;
 }
 
+.hero-wrapper {
+  height: 160px;
+  background-color: pink;
+  color: white;
+  .head {
+    @include vert-center();
+  }
+}
+
+.home {
+  .hero-wrapper {
+    height: 300px;
+  }
+}
+
 .subtitle {
   border-left: 6px solid $purple;
   padding-left: 4px;
@@ -59,8 +81,9 @@ button {
 .col-50, .col-30, .col-60 {
   clear: both;
   margin: 0;
-  padding: 12px 0px;
+  padding: 12px;
   display: inline-block;
+  vertical-align: top;
 }
 
 //nav
