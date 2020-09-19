@@ -217,6 +217,33 @@ button {
   filter: drop-shadow(-8px 8px 0px $purple);
 }
 
+.call-wrapper {
+  height: 300px;
+  background-image: url('./img/slider1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  h2 {
+    color: white;
+    font-size: 32px;
+    @include soft-shadow();
+  }
+  .frame {
+    @include vert-center();
+  }
+  button {
+    display: block;
+    position: absolute;
+    right: 0px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  #two {
+    top: 80px;
+  }
+}
+
 //homepage
 .home {
   .hero-wrapper {
@@ -241,32 +268,6 @@ button {
     }
     p {
       padding-right: 12px;
-    }
-  }
-  .call-wrapper {
-    height: 300px;
-    background-image: url('./img/slider1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    h2 {
-      color: white;
-      font-size: 32px;
-      @include soft-shadow();
-    }
-    .frame {
-      @include vert-center();
-    }
-    button {
-      display: block;
-      position: absolute;
-      right: 0px;
-    }
-    .buttons {
-      position: relative;
-      top: -20px;
-    }
-    #two {
-      top: 80px;
     }
   }
 }
@@ -354,6 +355,96 @@ button {
           fill: $purple;
         }
       }
+    }
+  }
+  .benefits {
+    max-height: 160px;
+    overflow: hidden;
+    h2 {
+      width: fit-content;
+    }
+    .card {
+      background-color: $teal;
+      margin: 24px;
+      border-radius: 100px 25px 25px 100px    ;
+      -webkit-border-radius: 100px 25px 25px 100px    ;
+      -moz-border-radius: 100px 25px 25px 100px    ;
+      -ms-border-radius: 100px 25px 25px 100px    ;
+      -o-border-radius: 100px 25px 25px 100px    ;
+      text-align: left;
+      padding: 8px;
+      height: 54px;
+      .icon {
+        display: inline-block;
+        background-color: white;
+        border-radius: 100px;      ;
+        -webkit-border-radius: 100px      ;
+        -moz-border-radius: 100px      ;
+        -ms-border-radius: 100px      ;
+        -o-border-radius: 100px      ;
+        height: 40px;
+        width: 40px;
+        svg {
+          width: 80%;
+          height: auto;
+          position: relative;
+          top: 4px;
+          left: 4px;
+          path {
+            fill: $purple;
+          }
+        }
+        }
+      .title {
+        display: inline-block;
+        @include border-radius();
+        background-color: white;
+        margin-left: 12px;
+        padding: 6px;
+        font-size: 20px;
+        position: relative;
+        top: -4px;
+        width: calc(100% - 60px);
+      }
+    }
+  }
+  .faq {
+    max-width: 1000px;
+    h2 {
+      width: fit-content;
+      margin: 0px auto;
+      margin-bottom: 12px;
+    }
+    .faq-entry {
+      margin: 12px 0px;
+      background-color: white;
+      @include border-radius();
+      padding: 8px;
+      position: relative;
+      .question {
+        font-size: 20px;
+        padding-right: 24px;
+        cursor: pointer;
+      }
+      .question::after {
+        content: "+";
+        position: absolute;
+        right: 12px;
+        top: 4px;
+        font-size: 24px;
+        font-weight: 800;
+        color: $purple;
+      }
+      .answer {
+        max-height: 0px;
+        padding: 0px 12px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-in-out      ;
+        -webkit-transition: max-height 0.2s ease-in-out      ;
+        -moz-transition: max-height 0.2s ease-in-out      ;
+        -ms-transition: max-height 0.2s ease-in-out      ;
+        -o-transition: max-height 0.2s ease-in-out      ;
+}
     }
   }
 }
@@ -487,6 +578,12 @@ button {
           display: inline-block;
         }
       }
+      .benefits {
+        .card {
+          width: calc(50% - 48px);
+          display: inline-block;
+        }
+      }
     }
 }
 
@@ -564,6 +661,11 @@ button {
       .values {
         .value-card {
           margin: 12px 0px;
+        }
+      }
+      .benefits {
+        .card {
+          width: calc(100% - 48px);
         }
       }
     }
