@@ -9,7 +9,7 @@ class Button extends React.Component {
     }
     render() {
         return(
-            <button className="drop-shadow"><Icons name={this.props.icon} />{this.props.label}</button>
+            <button className="drop-shadow" id={this.props.id}><Icons name={this.props.icon} />{this.props.label}</button>
         );
     }
 }

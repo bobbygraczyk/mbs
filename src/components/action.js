@@ -11,12 +11,12 @@ class CallToAction extends React.Component {
         return(
             <div className="call-wrapper">
                 <div className="frame">
-                    <div className="col-50">
+                    <div className="col-50 text">
                         <h2>It's time to get healthy</h2>
                     </div>
-                    <div className="col-50">
+                    <div className="col-50 buttons">
                         <Button icon="info" label="Learn More" />
-                        <Button icon="info" label="Request an Appointment" />
+                        <Button id="two" icon="info" label="Request an Appointment" />
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ class Home extends React.Component {
                         <p>Born and raised in Northeast Ohio, Dr. Stacey started a mobile chiropractic practice because she saw a need in her community that wasn’t being fulfilled. Due to the high overhead of a typical brick and mortar office, the average chiropractic doctor must treat an extremely high volume of patients every day to make a living. Tired of seeing patients get rushed through an inadequate five minute appointment, she saw an opportunity - starting a mobile chiropractic clinic would allow her the flexibility to spend more time with her patients while giving her a better understanding of the patient's lifestyle at home or in the workplace. This allows her to provide more specific care for the patient's needs.</p>
                         <Button icon={"info"} label={"Learn More About Dr. Stacey"} />
                     </div>
-                    <div className="col-30 drop-shadow" id="bio-photo" style={{height: "200px"}}>
+                    <div className="col-30 drop-shadow" id="bio-photo">
                         {/* bio photo */}
                     </div>
                 </div>
@@ -56,6 +56,7 @@ class Home extends React.Component {
                 </div>
                 
                 <CallToAction />
+                <div className="bar" />
             </div>
         );
     }
