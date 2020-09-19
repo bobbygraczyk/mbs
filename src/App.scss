@@ -3,6 +3,7 @@
 $teal: #8EC6C5;
 $purple: #8566AA;
 $sitka: 'EB Garamond', serif;
+$segoe: 'Segoe UI';
 @mixin vert-center {
   margin: 0 auto;
   position: relative;
@@ -29,7 +30,7 @@ $sitka: 'EB Garamond', serif;
 //
 
 body, html, #root {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: $segoe;
   max-width: 100vw;
   margin: 0;
   padding: 0;
@@ -58,6 +59,12 @@ h1, h2 {
   margin: 0;
   font-family: $sitka;
   font-weight: 500;
+}
+
+h3 {
+  font-family: $segoe;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 svg {
@@ -101,14 +108,46 @@ button {
   left: 12px;
 }
 
-.ben-card-icon, .ben-card-copy {
-  background-color: white;
-  color: black;
-  @include border-radius();
+.green-span {
+  @include soft-shadow();
 }
 
-.ben-card-copy {
-  text-align: left;
+.benefits-card {
+  padding: 32px;
+
+  h3 {
+    margin: 4px 0px;
+  }
+
+  .icon, .copy {
+    background-color: white;
+    color: black;
+    @include border-radius();
+  }
+  
+  .copy {
+    text-align: left;
+    padding: 12px;
+    margin-top: 24px;
+  }
+
+  .icon {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 500px  ;
+    -webkit-border-radius: 500px  ;
+    -moz-border-radius: 500px  ;
+    -ms-border-radius: 500px  ;
+    -o-border-radius: 500px  ;
+    svg {
+      width: 100%;
+      height: auto;
+      path {
+        fill: $purple;
+      }
+    }
+  }
 }
 
 .benefits {
