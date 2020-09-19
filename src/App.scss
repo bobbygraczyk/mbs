@@ -205,14 +205,6 @@ li::before {
   position: sticky;
   top: 0;
   z-index: 3;
-  .nav-link {
-    display: inline-block;
-    width: fit-content;
-    text-decoration: none;
-    :visited {
-      color: white;
-    }
-  }
 
   .svg-cont {
     margin: 0px;
@@ -221,6 +213,16 @@ li::before {
 
   .nav-fb path {
     fill: white;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+  margin: 12px 0px;
+  :visited {
+    color: white;
   }
 }
 
@@ -683,6 +685,17 @@ li::before {
     -moz-transition: left 0.2s ease-in-out;
     -ms-transition: left 0.2s ease-in-out;
     -o-transition: left 0.2s ease-in-out;
+    button {
+      float: right;
+      background-color: white;
+      color: $purple;
+      font-weight: 400;
+      border-radius:100px    ;
+      -webkit-border-radius:100px    ;
+      -moz-border-radius:100px    ;
+      -ms-border-radius:100px    ;
+      -o-border-radius:100px    ;
+    }
   }
   .mobile-menu a {
     display: block;
