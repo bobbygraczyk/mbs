@@ -11,8 +11,9 @@ class Services extends React.Component {
                         <h1>Services</h1>
                     </div>
                 </div>
+                <div className="bar" />
                 <div className="frame appts">
-                    <h2>Appointment Types</h2>
+                    <h2 className="subtitle">Appointment Types</h2>
                     <div className="appt-type col-30">
                         <h3>New Patient Exam</h3>
                         <span className="subhead">(45 minutes - 1 hour)</span>
@@ -83,7 +84,9 @@ class Services extends React.Component {
                         </ul>
                     </div>
                 </div>
+                <div className="bar" />
                 <CallToAction />
+                <div className="bar" />
             </div>
         )
     }
