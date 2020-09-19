@@ -227,21 +227,6 @@ button {
     font-size: 32px;
     @include soft-shadow();
   }
-  .frame {
-    @include vert-center();
-  }
-  button {
-    display: block;
-    position: absolute;
-    right: 0px;
-  }
-  .buttons {
-    position: relative;
-    top: -20px;
-  }
-  #two {
-    top: 80px;
-  }
 }
 
 //homepage
@@ -257,10 +242,6 @@ button {
     background-size: 100% auto;
     background-position-y: 30%;
     height: 300px;
-  }
-  #bio button {
-    float: right;
-    margin-right: 24px;
   }
   .meet {
     button {
@@ -514,6 +495,24 @@ button {
     top: 24px;
   }
 
+  .call-wrapper {
+    .frame {
+      @include vert-center();
+    }
+    .buttons {
+      position: relative;
+      top: -20px;
+    }
+    #two {
+      top: 80px;
+    }
+    button {
+      display: block;
+      position: absolute;
+      right: 0px;
+    }
+  }
+
   //contact
 
   .contact {
@@ -566,6 +565,12 @@ button {
     }
   }
 
+  //home {
+    #bio button {
+      float: right;
+      margin-right: 24px;
+    }
+
   //about {
     .about {
       .hero-wrapper {
@@ -607,6 +612,11 @@ button {
   }
   .svg-cont {
     display: inline-block;
+    width: fit-content;
+    img {
+      height: 50px;
+      width: auto;
+    }
   }
 
   //nav
@@ -649,10 +659,28 @@ button {
   .mobile-menu a {
     display: block;
   }
-  .svg-cont img {
-    height: 50px;
+  .call-wrapper {
+    button {
+      margin: 12px 0px;
+    }
   }
-
+  //home
+  .home {
+    .benefits-card {
+      padding: 8px 0px;
+    }
+    .meet {
+      button {
+        text-align: center;
+        width: fit-content;
+        margin: 12px auto;
+      }
+      #bio-photo {
+        width: calc(100% - 24px);
+        margin: 12px;
+      }
+    }
+  }
   //about {
     .about {
       .hero-wrapper {
@@ -664,6 +692,7 @@ button {
         }
       }
       .benefits {
+        max-height: 140px;
         .card {
           width: calc(100% - 48px);
         }
