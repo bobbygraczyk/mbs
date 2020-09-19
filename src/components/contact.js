@@ -5,12 +5,12 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="contact">
-                <div className="svg-cont">
+                <div className="svg-cont phone">
                     <Icons name="phone" />
                 </div>
-                <a href="tel:">(330) 321-3211</a>
-                <a href="mailto:">drstacey@mbschiro.com</a>
-                <div className="svg-cont">
+                <a href="tel:" id="phone">(330) 321-3211</a>
+                <a href="mailto:" id="email">drstacey@<br />mbschiro.com</a>
+                <div className="svg-cont email">
                     <Icons name="email" />
                 </div>
             </div>
