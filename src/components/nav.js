@@ -49,7 +49,7 @@ class Nav extends React.Component {
                         </div>
                         <div className="nav-links desktop">
                             <div className="svg-cont">
-                                <img src={logo} alt="Mind Body and Soul Logo" />
+                                <img width="200px" src={logo} alt="Mind Body and Soul Logo" />
                             </div>
                             {this.navButtons}
                             <a href="/">
