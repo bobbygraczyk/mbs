@@ -39,8 +39,8 @@ class Nav extends React.Component {
                             <div className="nav-open" onClick={() => this.toggleMobileMenu()}>
                                 <Icons name="logo" />
                             </div>
-                            <div className="svg-cont">
-                                <img id="main-logo" src={logo} alt="Mind Body and Soul Logo" />
+                            <div className="svg-cont main-logo">
+                                <Icons name="main-logo" />
                             </div>
                             <NavLink className="contact-button" to="/contact">Contact Us</NavLink>
                             <div className="svg-cont nav-fb">
@@ -52,8 +52,8 @@ class Nav extends React.Component {
                             {this.navButtons}
                         </div>
                         <div className="nav-links desktop">
-                            <div className="svg-cont">
-                                <img src={logo} alt="Mind Body and Soul Logo" />
+                            <div className="svg-cont main-logo">
+                                <Icons name="main-logo" />
                             </div>
                             {this.navButtons}
                             <a href="/">
