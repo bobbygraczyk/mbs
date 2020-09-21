@@ -572,6 +572,18 @@ li::before {
     }
   }
 
+  //home 
+
+  .home {
+    .hero-wrapper {
+      height: 400px;
+      h1 {
+        font-size: 46px;
+        @include soft-shadow();
+      }
+    }
+  }
+
   //contact
 
   .contact {
@@ -703,6 +715,7 @@ li::before {
     font-size: 32px;
     padding: 0px 12px;
     position: relative;
+    z-index: 3;
     top: -8px;
     cursor: pointer;
   }

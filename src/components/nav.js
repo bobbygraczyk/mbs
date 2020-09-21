@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../img/mbs-logo.svg'
 import Contact from './contact'
 import {
     NavLink,
