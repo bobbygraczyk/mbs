@@ -25,6 +25,36 @@ $segoe: 'Segoe UI';
   -webkit-filter: drop-shadow(0px 0px 2px #777);
 }
 
+@keyframes car {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-16px, 0px);
+  }
+  50% {
+    transform: translate(-16px, 2px);
+  }
+  60% {
+    transform: translate(-16px, -0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes homebg {
+  0% {
+    background-position-x: 0%;
+  }
+  50% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: 0%;
+  }
+}
+
 //
 // GLOBALS
 //
@@ -113,9 +143,6 @@ li::before {
   height: 160px;
   background-color: pink;
   color: white;
-  .head {
-    @include vert-center();
-  }
 }
 
 .subtitle {
@@ -260,10 +287,39 @@ li::before {
 .home {
   .hero-wrapper {
     background-image: url('./img/forest-road-2.jpg');
-    background-size: cover;
+    background-size: 200% 200%;
+    background-position-y: 80%;
+    animation-name: homebg;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     height: 300px;
     background-attachment: fixed;
-}
+    .head {
+      height: 100%;
+      position: relative;
+      h1 {
+        @include vert-center();
+      }
+    }
+    svg {
+      position: absolute;
+      z-index: 3;
+      bottom: -92px;
+      right: 24px;
+      height: 240px;
+      width: auto;
+      @include soft-shadow();
+      animation-name: car;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      transform: translate(0px, 0px);
+      transition: transform 0.2s ease-in-out;
+      path {
+        fill: $purple
+      }
+    }
+  }
   #bio-photo {
     background-image: url('./img/bio.jpg');
     background-size: 100% auto;
@@ -528,6 +584,8 @@ li::before {
     margin-right: 12px;
   }
   .nav-wrapper {
+    position: relative;
+    z-index: 4;
     .svg-cont {
       display: inline-block;
       padding-right: 24px;
@@ -708,7 +766,7 @@ li::before {
     height: 50px;
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 4;
   }
   .nav-open {
     display: inline-block;
@@ -766,6 +824,13 @@ li::before {
   }
   //home
   .home {
+    .hero-wrapper {
+      background-size: unset;
+      svg {
+        height: 100px;
+        bottom: -40px;
+      }
+    }
     .benefits-card {
       padding: 8px 0px;
     }

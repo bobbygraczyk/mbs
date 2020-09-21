@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../components/button';
 import BenefitsCard from '../components/benefitsCard';
+import Icons from '../components/icons';
 
 class Home extends React.Component {
     render() {
@@ -9,6 +10,7 @@ class Home extends React.Component {
                 <div className="hero-wrapper">
                     <div className="frame head">
                         <h1>Northeast Ohio's only <br /> 100% mobile chiropractor</h1>
+                        <Icons name="car" />
                     </div>
                 </div>
                 <div className="bar" />
