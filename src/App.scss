@@ -762,11 +762,16 @@ li::before {
 
   //nav
 
+  nav {
+    position: relative;
+    z-index: 5;
+  }
+
   .mobile-nav {
     height: 50px;
     position: sticky;
     top: 0;
-    z-index: 4;
+    z-index: 5;
   }
   .nav-open {
     display: inline-block;
@@ -795,7 +800,7 @@ li::before {
     background-color: $teal;
     position: absolute;
     top: 0px;
-    z-index: 4;
+    z-index: 5;
     left: -100vw;
     transition: left 0.2s ease-in-out;
     -webkit-transition: left 0.2s ease-in-out;
