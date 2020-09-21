@@ -101,6 +101,10 @@ svg {
   height: 100%;
 }
 
+.head {
+  @include vert-center();
+}
+
 button {
   background-color: $teal;
   @include border-radius();
