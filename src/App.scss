@@ -103,6 +103,7 @@ svg {
 
 .head {
   @include vert-center();
+  z-index: 2;
 }
 
 button {
