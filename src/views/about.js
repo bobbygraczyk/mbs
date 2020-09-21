@@ -82,8 +82,6 @@ class About extends React.Component {
                 <div className="green-span">
                     <Faq />
                 </div>
-                <CallToAction />
-                <div className= "bar" />
             </div>
         );
     }

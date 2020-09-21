@@ -42,28 +42,32 @@ class Services extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <div className="frame payment">
-                    <div className="col-50 pay-type">
-                        <Icons name="info" />
-                        <h2>Payment Options</h2>
-                        <p>
-                            We accept all HSA / FSA cards, credit / debit cards, and Venmo. We do not accept cash or checks.
-                        </p>
+                <div className="green-span">
+                    <div className="frame payment">
+                        <div className="col-50 pay-type">
+                            <Icons name="info" />
+                            <h2>Payment Options</h2>
+                            <p>
+                                We accept all HSA / FSA cards, credit / debit cards, and Venmo. We do not accept cash or checks.
+                            </p>
+                        </div>
+                        <div className="col-50 pay-type">
+                            <Icons name="info" />
+                            <h2>Insurance Options</h2>
+                            <p>
+                                We can provide you with an itemized bill (super bill) that you can personally submit to your insurance company for reimbursement. However, all insurance plans are different, so reimbursement is not guaranteed.
+                            </p>
+                        </div>
                     </div>
-                    <div className="col-50 pay-type">
-                        <Icons name="info" />
-                        <h2>Insurance Options</h2>
-                        <p>
-                            We can provide you with an itemized bill (super bill) that you can personally submit to your insurance company for reimbursement. However, all insurance plans are different, so reimbursement is not guaranteed.
-                        </p>
-                    </div>
-                    <div className="frame booking">
+                </div>
+                <div className="frame policies">
+                    <div className="booking">
                         <h2>Booking Fees</h2>
                         <p>
                             A booking fee of $25 must be electronically paid in order to book an appointment. The $25 will be applied towards any service rendered during that patient visit.  Remaining balances must be paid at the time of services rendered. If there is a discrepancy about a payment(s), the Doctor is always willing to discuss it with the patient. If the first visit is canceled less than 24 hours before the appointment, the booking fee will be forfeited. If the original booking fee is forfeited, the booking fee must be paid again prior to rescheduling your new patient appointment.
                         </p>
                     </div>
-                    <div className="frame cancellation">
+                    <div className="cancellation">
                         <h2>Cancellation Policy</h2>
                         <ul>
                             <li>
@@ -84,8 +88,6 @@ class Services extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <div className="bar" />
-                <CallToAction />
                 <div className="bar" />
             </div>
         )

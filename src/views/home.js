@@ -54,9 +54,6 @@ class Home extends React.Component {
                         </p>
                     </div>
                 </div>
-                
-                <CallToAction />
-                <div className="bar" />
             </div>
         );
     }

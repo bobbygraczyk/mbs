@@ -3,6 +3,8 @@ import Home from './views/home';
 import Nav from './components/nav';
 import About from './views/about';
 import Services from './views/services';
+import ContactPage from './views/contactPage';
+import CallToAction from './components/action';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,6 +17,9 @@ function App() {
     <Router>
       <Nav />
       <Switch>
+        <Route path="/contact">
+          <ContactPage />
+        </Route>
         <Route path="/services">
           <Services />
         </Route>
@@ -25,6 +30,8 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      <CallToAction />
+      <div className="bar" />
     </Router>
   );
 }
