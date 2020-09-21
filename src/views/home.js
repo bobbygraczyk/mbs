@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../components/button';
-import CallToAction from '../components/action';
 import BenefitsCard from '../components/benefitsCard';
 
 class Home extends React.Component {

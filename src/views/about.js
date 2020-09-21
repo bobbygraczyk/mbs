@@ -1,6 +1,5 @@
 import React from 'react';
 import Icons from '../components/icons';
-import CallToAction from '../components/action';
 
 class About extends React.Component {
     render() {

@@ -17,7 +17,6 @@ class Nav extends React.Component {
                 <NavLink className="nav-link" to='/' exact activeStyle={{borderBottom: '4px solid #8566AA'}} onClick={() => this.toggleMobileMenu()}>Home</NavLink>
                 <NavLink className="nav-link" to='/about' activeStyle={{borderBottom: '4px solid #8566AA'}} onClick={() => this.toggleMobileMenu()}>About</NavLink>
                 <NavLink className="nav-link" to='/services' activeStyle={{borderBottom: '4px solid #8566AA'}} onClick={() => this.toggleMobileMenu()}>Services</NavLink>
-                <NavLink className="nav-link" to='/contact' activeStyle={{borderBottom: '4px solid #8566AA'}} onClick={() => this.toggleMobileMenu()}>Contact</NavLink>
             </React.Fragment>
         );
         this.state = {
@@ -43,6 +42,10 @@ class Nav extends React.Component {
                             <div className="svg-cont">
                                 <img id="main-logo" src={logo} alt="Mind Body and Soul Logo" />
                             </div>
+                            <NavLink className="contact-button" to="/contact">Contact Us</NavLink>
+                            <div className="svg-cont nav-fb">
+                                <Icons name="fb" />
+                            </div>
                         </div>
                         <div ref={this.nav} className="mobile mobile-menu">
                             <button className="mobile" onClick={() => {this.toggleMobileMenu()}}>X</button>
@@ -57,6 +60,7 @@ class Nav extends React.Component {
                                 <div className="svg-cont nav-fb">
                                     <Icons name="fb" />
                                 </div>
+                                <NavLink className="contact-button" to="/contact">Contact Us</NavLink>
                             </a>
                             <Contact />
                         </div>

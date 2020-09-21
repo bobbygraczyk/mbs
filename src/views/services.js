@@ -1,5 +1,4 @@
 import React from 'react';
-import CallToAction from '../components/action';
 import Icons from '../components/icons';
 
 class Services extends React.Component {

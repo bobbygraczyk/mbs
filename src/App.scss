@@ -183,6 +183,14 @@ li::before {
   background-color: $teal;
 }
 
+.contact-button {
+  height: 40px;
+  padding: 8px;
+  background-color: $purple;
+  color: white;
+  @include border-radius();
+}
+
 //layout
 
 .frame {
@@ -473,6 +481,12 @@ li::before {
 
 @media screen and (min-width: 780px) {
 
+  .contact-button {
+    position: absolute;
+    right: 70px;
+    top: 16px;
+  }
+
   //layout
 
   .frame {
@@ -634,6 +648,18 @@ li::before {
 //
 
 @media screen and (max-width: 779px) {
+
+  .contact-button {
+    position: absolute;
+    right: 48px;
+    top: 6px;
+  }
+
+  .nav-fb {
+    position: absolute;
+    top: 13px;
+    right: 12px;
+  }
 
   //layout
 
