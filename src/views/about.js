@@ -124,8 +124,10 @@ class FaqEntry extends React.Component {
     toggleOpen() {
         if (this.state.isOpen) {
             this.answer.style.maxHeight = "0px";
+            this.answer.style.padding = "0px";
         } else {
             this.answer.style.maxHeight = "200px";
+            this.answer.style.padding = "0px 12px 24px 12px";
         }
         this.setState({
             isOpen: !this.state.isOpen

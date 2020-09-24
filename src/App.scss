@@ -321,7 +321,7 @@ li::before {
       transform: translate(0px, 0px);
       transition: transform 0.2s ease-in-out;
       path {
-        fill: $purple
+        fill: $purple;
       }
     }
   }
@@ -413,7 +413,7 @@ li::before {
     .info-box {
       background-color: white;
       @include border-radius();
-      padding: 12px;
+      padding: 32px;
       p {
         width: 90%;
         display: inline-block;
@@ -429,7 +429,7 @@ li::before {
     }
   }
   .benefits {
-    max-height: 160px;
+    max-height: 200px;
     overflow: hidden;
     h2 {
       width: fit-content;
@@ -487,10 +487,11 @@ li::before {
       margin-bottom: 12px;
     }
     .faq-entry {
-      margin: 12px 0px;
+      margin: 24px 0px;
       background-color: white;
       @include border-radius();
-      padding: 8px;
+      padding: 12px;
+      overflow: hidden;
       position: relative;
       .question {
         font-size: 20px;
@@ -508,13 +509,13 @@ li::before {
       }
       .answer {
         max-height: 0px;
-        padding: 0px 12px;
+        padding: 0px;
         overflow: hidden;
-        transition: max-height 0.2s ease-in-out      ;
-        -webkit-transition: max-height 0.2s ease-in-out      ;
-        -moz-transition: max-height 0.2s ease-in-out      ;
-        -ms-transition: max-height 0.2s ease-in-out      ;
-        -o-transition: max-height 0.2s ease-in-out      ;
+        transition: all 0.2s ease-in-out      ;
+        -webkit-transition: all 0.2s ease-in-out      ;
+        -moz-transition: all 0.2s ease-in-out      ;
+        -ms-transition: all 0.2s ease-in-out      ;
+        -o-transition: all 0.2s ease-in-out      ;
 }
     }
   }
@@ -557,7 +558,7 @@ li::before {
 
   .frame {
     max-width: 1280px;
-    padding: 24px;
+    padding: 50px 24px;
     width: 100%;
   }
   .col-60 {
@@ -750,7 +751,7 @@ li::before {
     display: none;
   }
   .frame {
-    padding: 12px;
+    padding: 24px 12px;
     width: 100%;
   }
   .col-60, .col-50, .col-30 {
