@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+    NavLink,
+    withRouter
+} from "react-router-dom";
 import Button from '../components/button';
 import BenefitsCard from '../components/benefitsCard';
 import Icons from '../components/icons';
@@ -18,7 +22,9 @@ class Home extends React.Component {
                     <div className="col-60" id="bio">
                         <h2 className="subtitle">Meet Dr. Stacey</h2>
                         <p>Born and raised in Northeast Ohio, Dr. Stacey started a mobile chiropractic practice because she saw a need in her community that wasn’t being fulfilled. Due to the high overhead of a typical brick and mortar office, the average chiropractic doctor must treat an extremely high volume of patients every day to make a living. Tired of seeing patients get rushed through an inadequate five minute appointment, she saw an opportunity - starting a mobile chiropractic clinic would allow her the flexibility to spend more time with her patients while giving her a better understanding of the patient's lifestyle at home or in the workplace. This allows her to provide more specific care for the patient's needs.</p>
-                        <Button icon={"info"} label={"Learn More About Dr. Stacey"} />
+                        <NavLink to="/about">
+                            <Button icon={"info"} label={"Learn More About Dr. Stacey"} />
+                        </NavLink>
                     </div>
                     <div className="col-30 drop-shadow" id="bio-photo">
                         {/* bio photo */}
@@ -60,4 +66,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default withRouter(Home);

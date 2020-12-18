@@ -43,7 +43,9 @@ class Nav extends React.Component {
                             </div>
                             <NavLink className="contact-button" to="/contact">Contact Us</NavLink>
                             <div className="svg-cont nav-fb">
-                                <Icons name="fb" />
+                                <a href="https://www.facebook.com/mbschiro2020" target="_new">
+                                    <Icons name="fb" />
+                                </a>
                             </div>
                         </div>
                         <div ref={this.nav} className="mobile mobile-menu">
@@ -57,7 +59,9 @@ class Nav extends React.Component {
                             {this.navButtons}
                             <a href="/">
                                 <div className="svg-cont nav-fb">
-                                    <Icons name="fb" />
+                                    <a href="https://www.facebook.com/mbschiro2020" target="_new">
+                                        <Icons name="fb" />
+                                    </a>
                                 </div>
                                 <NavLink className="contact-button" to="/contact">Contact Us</NavLink>
                             </a>

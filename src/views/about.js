@@ -2,6 +2,9 @@ import React from 'react';
 import Icons from '../components/icons';
 
 class About extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
         return (
             <div className="about">
@@ -12,7 +15,10 @@ class About extends React.Component {
                             Mind Body &amp; Soul Chiropractic, LCC is family owned and operated. <br />It is the only 100% mobile chiropractic office in Northeast Ohio. 
                         </h3>
                         <p>
-                            When Dr. Stacey chose a name for her practice, she wanted something that would express her passion for treating a patient in all aspects of their lives. As an individual, it is believed that the mind, body and soul are the three elements that make us who we are. We must focus on all the elements if we want to live happier, healthier lives and achieve optimal health. The World Health Organization defines Health as a state of complete physical, mental, and social well-being and not merely the absen
+                            When Dr. Stacey chose a name for her practice, she wanted something that would express her passion for treating a patient in all aspects of their lives.
+                             As an individual, it is believed that the mind, body and soul are the three elements that make us who we are. We must focus on all the elements if we 
+                             want to live happier, healthier lives and achieve optimal health. The World Health Organization defines Health as a state of complete physical, mental, 
+                             and social well-being and not merely the absence of disease or infirmity. We can’t achieve optimal health if we only focus on one aspect of our life.
                         </p>
                     </div>
                 </div>
@@ -135,16 +141,31 @@ class FaqEntry extends React.Component {
     }
     
     render() {
-        return (
-            <div className="faq-entry">
-                <p class="question" onClick={() => this.toggleOpen()}>
-                    {this.props.question}
-                </p>
-                <p class="answer" ref={(x) => this.answer = x}>
-                    &nbsp; <br /> {this.props.answer}
-                </p>
-            </div>
-        )
+        if (this.props.link) {
+            return (
+                <div className="faq-entry">
+                    <p class="question" onClick={() => this.toggleOpen()}>
+                        {this.props.question}
+                    </p>
+                    <p class="answer" ref={(x) => this.answer = x}>
+                        &nbsp; <br /> {this.props.answer}<br/><br/><br/>
+                        <a href={this.props.link} target="_new">Click Here</a>
+                    </p>
+                </div>
+            )
+        } else {
+            return (
+                <div className="faq-entry">
+                    <p class="question" onClick={() => this.toggleOpen()}>
+                        {this.props.question}
+                    </p>
+                    <p class="answer" ref={(x) => this.answer = x}>
+                        &nbsp; <br /> {this.props.answer}
+                    </p>
+                </div>
+            )
+        }
+        
     }
 }
 
@@ -155,11 +176,11 @@ class Faq extends React.Component {
                 <h2>Frequently Asked Questions</h2>
                 <FaqEntry 
                     question="Will my insurance pay for concierge (house call) Chiropractic care?"
-                    answer="No, insurance does not cover services provided by a chiropractor outside of the office setting. Also, maintenance and wellness care are non-covered services with most insurance plans. Credit or debit cards, venmo, FSA, and HSA are some of the payment options."
+                    answer="Unfortunately no, insurance does not cover services provided by a chiropractor outside of the office setting. Also, maintenance and wellness care are non-covered services with most insurance plans. We currently accept cash, credit or debit, venmo, cash app, FSA, and HSA."
                 />
                 <FaqEntry 
                     question="How long does an appointment take?"
-                    answer="A session is based upon the services needed on that particular day. An average session will typically run 10-60 minutes; With initial visits taking the longest amount of time."
+                    answer="A session is based upon the services needed on that particular day. An average session will typically run 10-30 minutes; With initial visits taking the longest amount of time."
                 />
                 <FaqEntry 
                     question="Where do you travel to?"
@@ -171,7 +192,8 @@ class Faq extends React.Component {
                 />
                 <FaqEntry 
                     question="Do you adjust by hand or with an instrument?"
-                    answer="We use the Activator Method, which uses an instrument."
+                    answer="We use the ImpulseIQ for adjusting bones and re-setting muscles. To learn more about the ImpulseIQ click on the link below."
+                    link="https://www.youtube.com/watch?v=nz-V2xojVoI"
                 />
                 <FaqEntry 
                     question="Does it hurt?"

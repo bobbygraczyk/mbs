@@ -115,6 +115,9 @@ button {
   font-weight: 300;
   font-size: 24px;
   padding: 4px 12px;
+  transform: translate(0px, 0px);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
   svg {
     path {
       fill: white;
@@ -124,6 +127,11 @@ button {
     position: relative;
     top: 3px;
   }
+}
+
+button:hover {
+  transform: translate(-8px, 8px);
+  filter: drop-shadow(0px 0px 0px #8566AA);
 }
 
 ul {
@@ -335,7 +343,7 @@ li::before {
   }
   .meet {
     button {
-      margin-top: 8px;
+      margin-top: 14px;
     }
     p {
       padding-right: 12px;
@@ -429,7 +437,6 @@ li::before {
     }
   }
   .benefits {
-    max-height: 200px;
     overflow: hidden;
     h2 {
       width: fit-content;
@@ -516,7 +523,13 @@ li::before {
         -moz-transition: all 0.2s ease-in-out      ;
         -ms-transition: all 0.2s ease-in-out      ;
         -o-transition: all 0.2s ease-in-out      ;
-}
+        a {
+          background-color: $purple;
+          padding: 8px;
+          @include border-radius();
+          margin: 12px 0px 0px 0px;
+        }
+      }
     }
   }
 }
@@ -532,6 +545,32 @@ li::before {
     background-attachment: fixed;
     background-size: 100% auto;
   }
+  .appt-type {
+    background-color: #8EC6C5;
+    @include border-radius();
+    margin: 12px;
+    h3, span, ul {
+      padding: 12px;
+      @include border-radius();
+      background-color: white;
+    }
+    h3 {
+      margin: 16px 0px;
+    }
+  }
+  .pay-type {
+    @include border-radius();
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+  }
+  svg {
+    height: 40px;
+    width: auto;
+    path {
+      fill: $purple;
+    }
+  }
 }
 
 .contact-page {
@@ -539,6 +578,14 @@ li::before {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+  }
+  .hero-wrapper {
+    h1 {
+      @include soft-shadow();
+    }
+    background-image: url('./img/services.png');
+    background-attachment: fixed;
+    background-size: 100% auto;
   }
 }
 
@@ -562,13 +609,13 @@ li::before {
     width: 100%;
   }
   .col-60 {
-    width: 66%;
+    width: 65%;
   }
   .col-50 {
-    width: 50%;
+    width: 49%;
   }
   .col-30 {
-    width: 33%;
+    width: 32%;
   }
   .mobile {
     display: none;
@@ -651,7 +698,7 @@ li::before {
   //contact
 
   .contact {
-    width: 220px;
+    width: 240px;
     height: 100px;
     background-color: $purple;
     position: absolute;
@@ -725,6 +772,11 @@ li::before {
         }
       }
     }
+
+    //services 
+      .appt-type {
+        width: calc(32% - 24px);
+      }
 }
 
 //
@@ -867,10 +919,13 @@ li::before {
         }
       }
       .benefits {
-        max-height: 140px;
         .card {
           width: calc(100% - 48px);
         }
       }
+    }
+     //services 
+     .appt-type {
+      width: calc(100% - 24px);
     }
 }

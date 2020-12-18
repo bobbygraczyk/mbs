@@ -2,6 +2,9 @@ import React from 'react'
 import Icons from '../components/icons';
 
 class ContactPage extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
         return (
             <div className="contact-page">
