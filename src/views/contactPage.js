@@ -21,7 +21,7 @@ class ContactPage extends React.Component {
                         <Icons name="email" />
                         <p id="email">drstacey@mbschiro.com</p>
                         <Icons name="info" />
-                        <p id="hours">M - F / 9AM - 5PM</p>
+                        <p id="hours">M - Th / 10AM - 7PM</p>
                         <p id="copy">You can reach Dr. Stacey by call, text, or email. Or, you may fill out the contact form below to request that Dr. Stacey reach out to you.</p>
                     </div>
                     
