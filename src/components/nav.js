@@ -43,7 +43,7 @@ class Nav extends React.Component {
                             </div>
                             <NavLink className="contact-button" to="/contact">Contact Us</NavLink>
                             <div className="svg-cont nav-fb">
-                                <a href="https://www.facebook.com/mbschiro2020" target="_new">
+                                <a href="https://www.facebook.com/Mind-Body-Soul-Chiropractic-Mobile-Chiropractor-109858157353664" target="_new">
                                     <Icons name="fb" />
                                 </a>
                             </div>
@@ -59,7 +59,7 @@ class Nav extends React.Component {
                             {this.navButtons}
                             <a href="/">
                                 <div className="svg-cont nav-fb">
-                                    <a href="https://www.facebook.com/mbschiro2020" target="_new">
+                                    <a href="https://www.facebook.com/Mind-Body-Soul-Chiropractic-Mobile-Chiropractor-109858157353664" target="_new">
                                         <Icons name="fb" />
                                     </a>
                                 </div>
